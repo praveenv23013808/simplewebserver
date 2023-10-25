@@ -27,15 +27,16 @@ content = """
 <!DOCTYPE html>
 <html>
 <head>
-<title>My webserver</title>
+<title>Top 5 Revenue Company</title>
 </head>
 <body>
-<h1><u>Languages used iun Web Development</u><h1>
+<h1><u>Top 5 Revenue Company</u><h1>
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Bootstrap</li>
+<li>Apple</li>
+<li>Microsoft</li>
+<li>Mi</li>
+<li>BlueBerry</li>
+<li>Google</li>
 </body>
 </html>
 """
@@ -46,15 +47,13 @@ class myhandler(BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',80)
+server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
 ```
 ## OUTPUT:
-![image](https://github.com/praveenv23013808/simplewebserver/assets/145824728/0cd12e73-7eb8-4560-9985-365de4e02a02)
-![WhatsApp Image 2023-10-10 at 12 28 33_6283aab8](https://github.com/praveenv23013808/simplewebserver/assets/145824728/cf22823b-dcc0-4a41-b0d1-b91bc52b4805)
-
-
+![EX-01](https://github.com/praveenv23013808/simplewebserver/assets/145824728/2e80ae57-5074-4e92-bf27-077f670298d4)
+![OUTPUT EX-01](https://github.com/praveenv23013808/simplewebserver/assets/145824728/2b42270b-1cf4-40d1-8fe6-667e987e78b4)
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
